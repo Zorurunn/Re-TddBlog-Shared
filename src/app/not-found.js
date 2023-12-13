@@ -14,7 +14,7 @@ export default function NotFound() {
                 <div>Page not Found</div>
                 <div>
                   We are sorry, This page is unknown or does not exist the page
-                  you are looking for.
+                  you are looking for. You can change the world.
                 </div>
                 <Link href={"/#"}>
                   <div className="bg-sky-400 rounded text-[white] w-fit p-[10px]">
