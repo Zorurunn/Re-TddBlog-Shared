@@ -13,7 +13,7 @@ export default function NotFound() {
               <div className="flex flex-col justify-between">
                 <div>Page not Found</div>
                 <div>
-                  We're sorry, This page is unknown or does not exist the page
+                  We are sorry, This page is unknown or does not exist the page
                   you are looking for.
                 </div>
                 <Link href={"/#"}>
