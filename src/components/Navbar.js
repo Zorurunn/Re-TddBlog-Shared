@@ -66,7 +66,9 @@ export const Navbar = (props) => {
         <div className=" w-screen m-auto max-w-[1100px] px-[16px] z-[30]">
           <nav className="w-full flex justify-between items-center pt-[20px] pb-[20px] z-[30]">
             <div>
-              <LogoSvg />
+              <Link href={"/#"}>
+                <LogoSvg />
+              </Link>
             </div>
             <div className="flex gap-[18px]">
               {menu.map((item, index) => {

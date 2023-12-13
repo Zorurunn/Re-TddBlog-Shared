@@ -6,16 +6,20 @@ import { MetaBlogSvg, MetaSvg } from "../svg/MetaBlogSvg";
 import { LogoSvg } from "../svg/LogoSvg";
 import { BlogSvg } from "../svg/BlogSvg";
 import { UnionSvg } from "../svg/UnionSvg";
+import Link from "next/link";
 
 const menu = [
   {
     title: "Home",
+    href: "/#",
   },
   {
     title: "Blog",
+    href: "/blog",
   },
   {
     title: "Contact",
+    href: "/contact",
   },
 ];
 const footerMenu = [
@@ -23,7 +27,13 @@ const footerMenu = [
     title: "Terms of Use",
   },
   {
+    title: "|",
+  },
+  {
     title: "Privacy Policy",
+  },
+  {
+    title: "|",
   },
   {
     title: "Cookie Policy",
@@ -47,8 +57,16 @@ export const Footer = () => {
         </div>
         <div className="flex flex-col  items-center gap-[25px]">
           {menu.map((item, index) => {
-            return <div key={index}>{item.title}</div>;
+            return (
+              <Link key={index} href={item.href}>
+                {item.title}
+              </Link>
+            );
           })}
+
+          {/* {menu.map((item, index) => {
+            return <div key={index}>{item.title}</div>;
+          })} */}
         </div>
         <div className="flex gap-[10px] pt-[2px]">
           <InstaSvg />
